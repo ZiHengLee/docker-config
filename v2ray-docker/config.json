@@ -1,0 +1,30 @@
+{
+    "log": {
+        "access": "/var/log/v2ray/access.log",
+        "error": "/var/log/v2ray/error.log",
+        "loglevel": "warning"
+    },
+    "inbounds": [
+      {
+        "port": 7980,
+        "protocol": "vmess",
+        "settings": {
+            "clients": [
+                {
+                    "id": "你的uuid",
+                    "alterId": 64
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp"
+        }
+      }
+    ],
+    "outbounds": [
+      {
+        "protocol": "freedom",
+    	"settings": {}
+      }
+    ]
+}
